@@ -17,7 +17,6 @@ export function fetchInvoice() {
 
 
 export function createInvoice(self, item) {
-    alert(item)
     return dispatch => {
         API.post('invoice', item).then((response) => {
             if (response.status === "success") {
